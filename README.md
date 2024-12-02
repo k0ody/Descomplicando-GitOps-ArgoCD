@@ -1,0 +1,1 @@
+# Descomplicando GitOps com ArgoCD
