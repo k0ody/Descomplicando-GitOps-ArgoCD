@@ -9,6 +9,11 @@ spec:
     server: https://kubernetes.default.svc
     namespace: argocd
   source:
+    parameters:
+    - name: argocd.giropops-senhas.enabled
+      value: "true"
+    - name: argocd.randomlogger-app.enabled
+      value: "true"
     repoURL: 'https://github.com/k0ody/Descomplicando-GitOps-ArgoCD.git'
     targetRevision: feat/day2
     path: app/app-of-apps
