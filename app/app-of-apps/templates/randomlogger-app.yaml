@@ -10,8 +10,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: random-logger/helm
-    repoURL: 'https://github.com/k0ody/Descomplicando-GitOps-ArgoCD.git'
+    path: app/random-logger/helm
+    repoURL: https://github.com/k0ody/Descomplicando-GitOps-ArgoCD.git
     targetRevision: feat/day2
   syncPolicy:
     automated:

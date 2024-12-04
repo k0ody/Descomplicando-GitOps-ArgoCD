@@ -15,8 +15,8 @@ spec:
       parameters:
       - name: "giropopsSenhas.replicas"
         value: "{{ .Values.argocd.giropopsSenhas.replicas }}"
-    path: giropops-senhas/helm
-    repoURL: 'https://github.com/k0ody/Descomplicando-GitOps-ArgoCD.git'
+    path: app/giropops-senhas/helm
+    repoURL: https://github.com/k0ody/Descomplicando-GitOps-ArgoCD.git
     targetRevision: feat/day2
   syncPolicy:
     automated:

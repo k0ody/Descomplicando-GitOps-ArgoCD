@@ -9,7 +9,7 @@ spec:
     helm: {}
     repoURL: 'https://github.com/k0ody/Descomplicando-GitOps-ArgoCD.git'
     targetRevision: feat/day2
-    path: 'app/giropops-senhas/helm'
+    path: app/giropops-senhas/helm
   destination:
     namespace: giropops-senhas
     server: 'https://kubernetes.default.svc'

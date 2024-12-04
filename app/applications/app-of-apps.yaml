@@ -9,6 +9,7 @@ spec:
     server: https://kubernetes.default.svc
     namespace: argocd
   source:
+    path: app/app-of-apps
     helm:
       parameters:
       - name: "argocd.giropopsSenhas.enabled"
@@ -17,9 +18,11 @@ spec:
         value: "true"
     repoURL: 'https://github.com/k0ody/Descomplicando-GitOps-ArgoCD.git'
     targetRevision: feat/day2
-    path: app/app-of-apps
+    
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
+      - prune=true
     automated:
       selfHeal: true
+      prune: true
